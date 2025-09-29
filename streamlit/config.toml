@@ -1,1 +1,3 @@
 toml [server] headless = true port = 10000 [browser] serverAddress = "0.0.0.0" serverPort = 10000
+mkdir -p .streamlit
+printf "[server]\nrunOnSave = true\n" > .streamlit/config.toml
